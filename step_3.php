@@ -8,5 +8,5 @@ $area=$heigth*$width;
 echo "My name is : ".$name." and my email is :".$email;
 echo "<br>";
 
-echo "the area ".$area ."cm";
+echo "the area ".$area ."m";
 ?>
