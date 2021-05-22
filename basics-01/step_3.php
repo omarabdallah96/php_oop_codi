@@ -1,8 +1,8 @@
 <?php
 $name= 'omar abdallah';
 $email='omarabdallah.codi@gmail.com';
-$heigth=10;
-$width=10;
+$heigth=20;
+$width=20;
 $area=$heigth*$width;
 // Output
 echo "My name is : ".$name." and my email is :".$email;
