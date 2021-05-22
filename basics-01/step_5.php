@@ -1,6 +1,6 @@
 <?php
 
-$course_name = "php  course";
+$course_name = "php course";
 $enrolled_students=30;
 $price=10.5;
 $on_discount=false;
