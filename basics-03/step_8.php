@@ -7,7 +7,7 @@ $transactions = array(
     ),
     array(
        "id" => 3,
-       "name"=> "Omar",
+       "name"=> "omar",
        "email"=> "omar@codi.tech"
     )
 );
