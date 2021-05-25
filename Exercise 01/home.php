@@ -24,7 +24,7 @@ $(document).ready(function(){
 </script>
 <style>
 <?php
-include "style.css";
+include "css/style.css";
 
 ?>
 
@@ -71,10 +71,10 @@ include "style.css";
 
     <form method="post" action="">
    
-    <input type="text" autocomplete="off" name="user_name" placeholder="Username" required />
+    <input type="text" autocomplete="off" name="user_nam" placeholder="Username" required />
 
   
-    <input type="password" autocomplete="off" name="user_name" placeholder="Password" required />
+    <input type="password" autocomplete="off" name="password" placeholder="Password" required />
    
 
 
@@ -91,6 +91,24 @@ include "style.css";
 
 </body>
 </html>
+<?php
+require 'db.php';
+session_start();
+
+if(isset($_POST['log_in'])){
+	$user = $_POST['user_nam'];
+	$pass = $_POST['password'];
+	
+	$qu = "select * from user_tbl where user_nam = '$user' && user_password = '$pass'";
+	
+	if(mysqli_num_rows(mysqli_query($con, $qu)) > 0){
+		$_SESSION['user_nam'] = $user;
+		header("Location: safe.php");
+	} else {
+    echo "<script type='text/javascript'>alert('enter a valid user name');</script>";
+
+  }}
+?>
 
 <?php
 
