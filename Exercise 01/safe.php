@@ -12,9 +12,19 @@
 
 
 <form  class="lis" method="post">
+<h3>welcome
+    <?php 
+
+    session_start();
+
+echo $_SESSION["user_nam"] ;
+".<br>";
+
+?></h3>
+
+<a href="tax.php">tax income salary</a>
 
 <input id="logout" type="submit" value="logout" name="logout"/>
-<a href="tax.php">tax income salary</a>
 
 
 
