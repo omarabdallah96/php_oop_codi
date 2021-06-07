@@ -1,0 +1,15 @@
+{
+    "name": "khaldon/php",
+    "authors": [
+        {
+            "name": "khaldounnd",
+            "email": "khaldoun.noureddine@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
